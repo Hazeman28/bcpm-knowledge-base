@@ -1,15 +1,8 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: Company wiki and collection of knowledge in regards to full stack web development
-actionText: Quick Start →
-actionLink: /guide/
+tagline: Company's wiki and collection of knowledge in regards to full stack web development
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+- title: Get started in BCPM
+  details: Learn about our tools and conventions to rocket launch yourself into the world of web development
 footer: Made by Nizomiddin Toshpulatov with ❤️
 ---

@@ -1,7 +1,7 @@
 {
   "name": "bcpm-knowledge-base",
   "version": "0.0.1",
-  "description": "Company wiki and collection of knowledge in regards to full stack web development",
+  "description": "Company's wiki and collection of knowledge in regards to full stack web development",
   "main": "index.js",
   "authors": {
     "name": "Nizomiddin Toshpulatov",

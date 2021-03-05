@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'BCPM Knowledge Base',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -27,16 +27,24 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
+    repo: 'https://github.com/Hazeman28/bcpm-knowledge-base',
+    editLinks: true,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
     nav: [
+      {
+        text: 'Git',
+        link: '/git/',
+      },
       {
         text: 'Code Style',
         link: '/code-style/',
       },
+      {
+        text: 'Contribution',
+        link: '/contribution/',
+      }
     ],
     sidebar: {
       '/code-style/': [
@@ -45,7 +53,18 @@ module.exports = {
           children: [
             '',
             'eslint',
+            'react-eslintrc',
           ]
+        }
+      ],
+      '/git/': [
+        {
+          title: 'Git',
+          children: [
+            '',
+            'commits',
+            'pull-requests',
+          ],
         }
       ],
       '/guide/': [
