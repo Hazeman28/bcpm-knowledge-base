@@ -1,0 +1,19 @@
+{
+  "name": "bcpm-knowledge-base",
+  "version": "0.0.1",
+  "description": "Company wiki and collection of knowledge in regards to full stack web development",
+  "main": "index.js",
+  "authors": {
+    "name": "Nizomiddin Toshpulatov",
+    "email": "nizomiddin.toshpulatov@bcpm.sk"
+  },
+  "repository": "git@github.com:Hazeman28/bcpm-knowledge-base.git/bcpm-knowledge-base",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
