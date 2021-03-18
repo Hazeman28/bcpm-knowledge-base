@@ -140,6 +140,9 @@ If you want to bring some changes, then create a pull request that incorporates
 them. Make sure to describe your decisions as it will help other team members to
 evaluate those changes.
 
+For more info about contributing check out [Contribution](/contribution) section
+of these docs.
+
 ## References
 
 [0]:
