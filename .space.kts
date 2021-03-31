@@ -11,7 +11,7 @@ job("Deploy to GitHub pages") {
             location = "./deploy.sh"
         }
         
-        stratOn {
+        startOn {
         	gitPush {
             	branchFilter {
                 	"refs/heads/release"

@@ -19,90 +19,92 @@ Install packages above as [developer dependencies][1] (add `--save-dev` option
 during install, or `--dev` if you are using yarn).
 
 ```yml
----
-extends: airbnb
-settings:
-  react:
-    version: detect
-env:
+--- 
+env: 
   browser: true
-parserOptions:
-  ecmaFeatures:
+  node: true
+extends: 
+  - airbnb
+  - airbnb/hooks
+parserOptions: 
+  ecmaFeatures: 
     jsx: true
-rules:
-  comma-dangle:
+  ecmaVersion: 11
+rules: 
+  camelcase: off
+  comma-dangle: 
     - error
     - always-multiline
   eol-last: error
   eqeqeq: error
   id-length: error
-  indent:
+  import/newline-after-import: 
+    - error
+    - count: 2
+  import/no-extraneous-dependencies: off
+  import/order: 
+    - error
+    - alphabetize: 
+        order: asc
+      newlines-between: never
+  indent: 
     - error
     - 2
     - SwitchCase: 1
-  import/newline-after-import:
-    - error
-    - count: 2
-  import/order:
-    - error
-    - newlines-between: never
-      alphabetize:
-        order: asc
+  jsx-a11y/click-events-have-key-events: off
+  jsx-a11y/no-noninteractive-element-interactions: off
+  jsx-quotes: error
   keyword-spacing: error
-  linebreak-style:
+  linebreak-style: 
     - error
     - unix
+  no-console: 
+    - error
+    - allow: 
+      - warn
+      - error
   no-irregular-whitespace: error
+  no-multiple-empty-lines: off
   no-var: error
+  no-void: off
   object-curly-spacing:
     - error
     - always
-  semi:
-    - error
-    - always
-  space-before-function-paren: 0
-  space-before-blocks: error
-  space-infix-ops:
-    - error
-    - int32Hint: false
-  quotes:
+  quotes: 
     - error
     - single
-  no-console:
-    - error
-    - allow:
-      - warn
-      - error 
-  jsx-quotes: error
-  react/boolean-prop-naming: error
+  react-hooks/exhaustive-deps: warn
+  react-hooks/rules-of-hooks: error
   react/button-has-type: error
-  react/default-props-match-prop-types: error 
-  react/destructuring-assignment:
+  react/default-props-match-prop-types: error
+  react/destructuring-assignment: 
     - error
     - always
-  react/function-component-definition:
+  react/forbid-prop-types: off
+  react/function-component-definition: 
     - error
     - namedComponents: arrow-function
   react/jsx-boolean-value: error
   react/jsx-closing-bracket-location: error
   react/jsx-closing-tag-location: error
-  react/jsx-curly-brace-presence:
+  react/jsx-curly-brace-presence: 
     - error
     - never
   react/jsx-curly-newline: error
-  react/jsx-curly-spacing:
+  react/jsx-curly-spacing: 
     - error
     - never
-  react/jsx-equals-spacing:
+  react/jsx-equals-spacing: 
     - error
     - never
+  react/jsx-filename-extension: off
   react/jsx-fragments: error
   react/jsx-handler-names: error
   react/jsx-key: error
-  react/jsx-max-depth:
+  react/jsx-max-depth: 
     - error
     - max: 10
-  react/jsx-max-props-per-line:
+  react/jsx-max-props-per-line: 
     - error
     - when: multiline
   react/jsx-no-duplicate-props: error
@@ -111,12 +113,14 @@ rules:
   react/jsx-no-useless-fragment: error
   react/jsx-pascal-case: error
   react/jsx-props-no-multi-spaces: error
+  react/jsx-props-no-spreading: off
   react/jsx-sort-default-props: error
   react/jsx-sort-props: error
   react/jsx-tag-spacing: error
   react/jsx-uses-react: error
   react/jsx-uses-vars: error
   react/jsx-wrap-multilines: error
+  react/no-array-index-key: off
   react/no-children-prop: error
   react/no-deprecated: error
   react/no-this-in-sfc: error
@@ -125,13 +129,27 @@ rules:
   react/no-unused-state: error
   react/prop-types: error
   react/react-in-jsx-scope: error
+  react/require-default-props: off
   react/self-closing-comp: error
   react/sort-prop-types: error
   react/style-prop-object: error
   react/void-dom-elements-no-children: error
-  react-hooks/rules-of-hooks: error
-  react-hooks/exhaustive-deps: warn
-
+  semi: 
+    - error
+    - always
+  space-before-blocks: error
+  space-before-function-paren: 0
+  space-infix-ops: 
+    - error
+    - int32Hint: false
+settings: 
+  import/resolver: 
+    node: 
+      moduleDirectory: 
+        - node_modules
+        - src
+  react: 
+    version: detect
 ```
 
 ## How To Contribute?
