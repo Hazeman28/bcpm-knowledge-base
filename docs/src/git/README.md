@@ -17,7 +17,7 @@ To check if you have git installed on your system, run this command in your
 terminal:
 
 ```bash
-$ git --version # git version x.y.z
+git --version # git version x.y.z
 ```
 
 It should print out the version of git.
@@ -27,8 +27,8 @@ It should print out the version of git.
 To start working with git, you need to initialize it inside of your project:
 
 ```bash
-$ cd <path-to-my-project>
-$ git init
+cd <path-to-my-project>
+git init
 ```
 
 This will create a `.git` directory inside of your project. This is where git
@@ -43,7 +43,7 @@ Once you have initialized git, it is time to make your very first commit! But
 before you do that, check status of your repository:
 
 ```bash
-$ git status
+git status
 ```
 
 This should print out files and directories from your project as *unstaged*.
@@ -51,7 +51,7 @@ This means that git is not tracking any files yet. To start tracking changes in
 files you have to add them. This is done with `add` command of git:
 
 ```bash
-$ git add <path-to-a-file-or-directory>
+git add <path-to-a-file-or-directory>
 ```
 
 Path can be a file or a directory. In latter case, git would include all files
@@ -59,7 +59,7 @@ from that directory. So you could do something like this to add all files of
 your project:
 
 ```bash
-$ git add .
+git add .
 ```
 
 But often we have files that we don't want git to track. Such files often
@@ -79,7 +79,7 @@ actually didn't want that file to be tacked by git. To fix this, you can run
 `remove` command with `--cached` option:
 
 ```bash
-$ git remove --cached <path>
+git remove --cached <path>
 ```
 
 This will instruct git to remove specified file or directory from its track
@@ -90,7 +90,7 @@ You can learn more about `.gitignore` and all of its options [here][3].
 But once you have staged all of your files, you can commit them:
 
 ```bash
-$ git commit
+git commit
 ```
 
 This will open up default editor specified in git's configuration (which usually
@@ -140,26 +140,26 @@ contact form. To separate their work, they create separate branches for their
 tasks:
 
 ```bash
-$ git branch feature/navigation # Jade
+git branch feature/navigation # Jade
 ```
 
 ```bash
-$ git branch feature/contact-form # Alex
+git branch feature/contact-form # Alex
 ```
 
 But before they start coding, they have to *checkout* to their new branch:
 
 ```bash
-$ git checkout feature/navigation # Jade
+git checkout feature/navigation # Jade
 ```
 
 ```bash
-$ git checkout feature/contact-form # Alex
+git checkout feature/contact-form # Alex
 ```
 
 > There is also a shorthand to *create and checkout* to a new branch:
 > ```bash
-> $ git checkout -b <branch-name>
+> git checkout -b <branch-name>
 > ```
 
 Now their work is separated. All commits they make will be in that branch only.
@@ -192,20 +192,20 @@ for hosting git repositories.
 To push your changes to a remote repository, you first have to add it:
 
 ```bash
-$ git remote add <remote-name> <remote-link>
+git remote add <remote-name> <remote-link>
 ```
 
 Here, `<remote-name>` is going to be an alias to the `<remote-link>`. Usually,
 there is only one remote repository and its commonly called `origin`:
 
 ```bash
-$ git remote add origin <remote-link>
+git remote add origin <remote-link>
 ```
 
 Once you have added link to your remote repository, you can push your changes:
 
 ```bash
-$ git push --set-upstream origin <your-branch-name>
+git push --set-upstream origin <your-branch-name>
 ```
 
 `--set-upstream` option is required only on the first push of your branch. It
@@ -214,7 +214,7 @@ future pulls and pushes you won't have to specify remote name and branch name.
 You would simply run:
 
 ```bash
-$ git push # or git pull
+git push # or git pull
 ```
 
 Read more about remotes [here][4].

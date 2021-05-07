@@ -6,12 +6,10 @@ it. So how do we solve this problem without hurting anyone's feelings (at least
 without hurting them too much 😅)?
 
 Answer is we don't give them a choice. We impose fixed code style with tools
-such as `eslint` and adjust it based on their feedback until a certain point. So
-we do listen to everybody's opinion, but ultimately we can't make them all
-happy. We mimic popular code style guidelines, but add our flavor, so as a
-result we have something that could appeal to as many people as possible.
-Naturally, if majority of the team is against choices made in this regard, then
-those choices would be a subject to change.
+such as `eslint` and `prettier`. We mimic popular code style guidelines,
+but add our flavor, so as a result we have something that could appeal to as
+many people as possible. Naturally, if majority of the team is against choices
+made in this regard, then those choices would be a subject to change.
 
 But which popular guideline do we take as a basis? What determines *"our
 flavor"*? These question are answered based on what language and framework we
@@ -20,7 +18,7 @@ JavaScript. Frameworks we use for backend include [Express.js][0] and
 [Strapi][1]; for frontend we use [React][2] (although these docs are created in
 [Vuepress][3], thanks Vue.js team 🙏🏻).
 
-In our case we use [Airbnb's Style Guide](https://github.com/airbnb/javascript)
+In our case we, use [Airbnb's Style Guide](https://github.com/airbnb/javascript)
 as our basis for JavaScript code style. It's as its own motto states:
 
 *"A mostly reasonable approach to JavaScript"*

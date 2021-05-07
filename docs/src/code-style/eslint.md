@@ -8,11 +8,11 @@ looking code through the scope of an entire project.
 To add eslint to your project, simply install it via [`npm`][5] or [`yarn`][6]:
 
 ```bash
-$ npm install eslint --save-dev
+npm install eslint --save-dev
 ```
 or with yarn:
 ```bash
-$ yarn add eslint --dev
+yarn add eslint --dev
 ```
 
 ## Configuring eslint
@@ -70,12 +70,12 @@ project:
 Then, you could run this script like so:
 
 ```bash
-$ npm run test:lint
+npm run test:lint
 ```
 or if you are using yarn:
 
 ```bash
-$ yarn test:lint
+yarn test:lint
 ```
 
 Eslint takes path to the source directory as its argument, so by specifying `.`
@@ -91,11 +91,11 @@ fixable or not. You don't have to add `--fix` option to the script if you don't
 want to. You can simply append it during the execution of the script:
 
 ```bash
-$ npm run test:lint --fix
+npm run test:lint --fix
 ```
 or with yarn:
 ```bash
-$ yarn test:lint --fix
+yarn test:lint --fix
 ```
 
 ## Pre-commit hooks
@@ -136,11 +136,11 @@ But don't worry, there is a solution. There is an npm package called
 install any other package:
 
 ```bash
-$ npm install pre-commit --save-dev
+npm install pre-commit --save-dev
 ```
 or with yarn:
 ```bash
-$ yarn add pre-commit --dev
+yarn add pre-commit --dev
 ```
 
 Then add `pre-commit` field to your `package.json`:

@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'BCPM Knowledge Base',
+  title: 'UNIIT Knowledge Base',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -53,6 +53,8 @@ module.exports = {
           children: [
             '',
             'eslint',
+            'prettier',
+            'stylelint',
             'react-eslintrc',
           ]
         }
